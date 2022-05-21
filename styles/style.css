@@ -64,3 +64,23 @@ body {
   color: var(--primary-link-color);
   background: var(--primary-background);
 }
+
+.header__tel{
+  color: var(--primary-link-color);
+  font-size: 25px;
+  transition: 0.5s color, 0.5s background;
+}
+
+.header__tel:hover{
+  color: var(--secondary-link-color);
+  text-shadow: 0 0 15px;
+}
+
+.hedaer__toggler{
+  color: var(--primary-text-color);
+  font-size: 35px;
+}
+
+.header__toggler:focus{
+  box-shadow: none;
+}
