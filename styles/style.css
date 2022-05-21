@@ -1,0 +1,66 @@
+@import 'font.css';
+
+:root {
+  --primary-font-face: 'Montserrat';
+  --secondary-font-face: 'Trebuchet';
+  --primary-text-color: #323232;
+  --secondary-text-color: #FFFFFF;
+  --primary-background: #FFFFFF;
+  --secondary-background: #7177F1;
+  --primary-title-color: #7177F1;
+  --secondary-title-color: #FFFFFF;
+  --secondary-title-color-alt: #151437;
+  --primary-link-color: #7177F1;
+  --secondary-link-color: #FFFFFF;
+}
+
+body {
+  background: var(--primary-background);
+  font-family: var(--primary-font-face);
+  color: var(--primary-text-color);
+}
+
+.logo::before {
+  content: url(../images/logo-light.png);
+}
+
+.header {
+  position: relative;
+}
+
+.header__link {
+  color: var(--primary-link-color);
+  margin: 15px;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.5s color;
+  display: block;
+}
+
+.header__link:hover {
+  color: var(--secondary-text-color);
+}
+
+.header__button {
+  height: 40px;
+  width: 190px;
+  background: var(--secondary-background);
+  box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-link-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  transition: 0.5s color, 0.5s background;
+  margin-left: 15px;
+  margin-right: 60px;
+}
+
+.header__button:hover {
+  color: var(--primary-link-color);
+  background: var(--primary-background);
+}
